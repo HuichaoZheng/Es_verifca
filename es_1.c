@@ -11,7 +11,7 @@ int main(int argc, char*argv)
     int media_ristorazione;
     do{
         printf("Quale operazione vuoi fare?\n");
-        printf("1. Bevande \n2.Ristorazione\n3.Esci\n");
+        printf("1. Bevande \n2. Ristorazione\n3. Esci\n");
         scanf("%d", &scelta);
         if(scelta==1){
             do{
@@ -22,7 +22,7 @@ int main(int argc, char*argv)
             incasso_bevande+=costo;
             conta_bevande++;
         }
-        else{
+        else if(scelta == 2){
             do{
                 printf("Insersci incasso per ristorazione:\n");
                 scanf("%d", &costo);
